@@ -179,6 +179,8 @@ http://127.0.0.1:8050/
 # TASK 4
 How would you create a data platform end-to-end system? the data might have internal data or external data, but the end data would be stored into cloud platforms like Google Cloud Platform or Azure Platform or AWS Platform. Please give details step by step, including data preparation, model evaluation, etc.
 
+![End to End Data Platform](https://github.com/fawwazfrnsyh/technical-test/blob/main/TASK_4_End-to-End%20Data%20Platform.png?raw=true)
+
 ### 1. Data Preparation
 #### Internal Data Sources
 - **Company Systems**: Export data from existing enterprise systems
