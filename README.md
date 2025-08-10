@@ -175,6 +175,35 @@ http://127.0.0.1:8050/
 ---
 
 # TASK 3
+How would you create a LLM chat (a chatgpt-like solution or RAG applications) that uses only some company internal database? Please give details step by step, including data preparation, model evaluation, etc. It would be a plus if you could create strategies for reducing or preventing LLM hallucinations.
+
+# Company Internal LLM Chat System
+
+### Scope
+- **Internal Data Only**: Uses exclusively company documents and databases
+- **Source Attribution**: Every answer shows which documents it came from
+---
+
+### Data Preparation
+**ETL + Cleaning**
+- **Extraction**: Extract data from databases (SQL), files (PDF, Word), internal wikis, ticketing, and standard operating procedures.
+- **Normalization**: Convert date formats, case, and duplicates.
+- **Segmentation**: Divide long documents into meaningful chunks (≈200–800 tokens) with minimal overlap. Include metadata (source, table/row ID, date).
+---
+
+### Create an internal search engine
+- Convert each chunk into numbers (embeddings) and store them in a vector database for fast search.
+
+### Build a RAG (Retrieval-Augmented Generation) flow
+- Users ask questions.
+- The system finds the most relevant chunks.
+- The LLM compiles answers based solely on those chunks, citing the source.
+
+### Test & monitor
+Create a list of test questions, measure their accuracy and the number of incorrect answers, and then refine them. Monitor usage and update the index if the data changes.
+
+
+
 ---
 
 # TASK 4
