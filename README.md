@@ -170,6 +170,7 @@ http://127.0.0.1:8050/
 ---
 
 ## Dashboard Preview
+![Plotly Dash Luxury Loan](https://github.com/fawwazfrnsyh/technical-test/blob/main/Plotly%20Dash.png?raw=true)
 
 ---
 
